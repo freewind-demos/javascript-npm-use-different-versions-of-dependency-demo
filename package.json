@@ -1,8 +1,0 @@
-{
-  "scripts": {
-    "demo": "node hello.js"
-  },
-  "dependencies": {
-    "lodash": "^4.17.10"
-  }
-}
