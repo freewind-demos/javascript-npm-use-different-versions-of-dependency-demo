@@ -1,0 +1,8 @@
+{
+  "name": "javascript-npm-use-different-versions-of-dependency-demo--hello2",
+  "version": "0.1.0",
+  "main": "./hello.js",
+  "dependencies": {
+    "lodash": "^4.0.1"
+  }
+}

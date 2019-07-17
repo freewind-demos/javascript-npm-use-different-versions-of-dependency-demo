@@ -4,6 +4,7 @@
   },
   "dependencies": {
     "javascript-npm-use-different-versions-of-dependency-demo--hello": "0.1.0",
+    "javascript-npm-use-different-versions-of-dependency-demo--hello2": "0.1.0",
     "lodash": "4.17.11"
   }
 }
