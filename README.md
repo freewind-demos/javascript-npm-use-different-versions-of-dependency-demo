@@ -1,6 +1,8 @@
 JavaScript Npm Use Different Versions of Dependency Demo
 ========================================================
 
+(注：yarn使用了一样的方案，但是pnpm不是，它使用的是npm@2中的无flat的方案）
+
 如果一个项目使用的某个package在它引用的某个dependency中也用到了，但是两者使用的版本不同，
 最后将会使用哪个版本呢？
 
