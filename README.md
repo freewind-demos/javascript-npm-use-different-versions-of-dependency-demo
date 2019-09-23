@@ -35,5 +35,19 @@ Shows dependency list:
 /Users/peng.li/development/javascript-npm-use-different-versions-of-dependency-demo/main
 ├─┬ javascript-npm-use-different-versions-of-dependency-demo--hello@0.1.0
 │ └── lodash@3.10.1
+├─┬ javascript-npm-use-different-versions-of-dependency-demo--hello2@0.1.0
+│ └── lodash@4.17.11 deduped
 └── lodash@4.17.11
 ```
+
+下面这篇文章讲得特别好：
+
+https://medium.com/learnwithrahul/understanding-npm-dependency-resolution-84a24180901b
+
+要点：
+1. 在安装的过程中，如果某个package第一次被使用，它将会被放在node_modules根目录下
+2. 如果它的不同版本（不兼容版本）之后又被引用到，则后来版本会被安装在dependency的node_modules下
+3. 所以安装的顺序非常重要，不同的安装顺序会导致项目node_modules下的package的版本不一致
+4. 所以package.json中，依赖的声明顺序也非常重要，所以通常使用字典序，以保证行为一致
+
+感觉npm的这种处理还是比较复杂的
